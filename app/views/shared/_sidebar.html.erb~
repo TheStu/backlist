@@ -1,0 +1,14 @@
+<div class="sidebar">
+  <div class="social-button">
+    <su:badge layout="1" location="http://www.backpackingchecklist.net"></su:badge>
+  </div>
+  <div class="social-button">
+    <div class="fb-like" data-href="http://www.backpackingchecklist.net" data-send="false" data-layout="button_count" data-width="75" data-show-faces="false" data-font="arial"></div>
+  </div>
+  <div class="social-button">
+    <div class="g-plusone" data-size="medium" data-href="http://www.backpackingchecklist.net"></div>
+  </div>
+  </br>
+  </br>
+  <%= render "shared/genre_map" %>
+</div>

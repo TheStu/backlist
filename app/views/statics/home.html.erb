@@ -1,0 +1,579 @@
+<% provide(:title, "home") %>
+<ul class="select-checklist">
+  <li class="select-li">General Checklist</li>
+  <li class="select-li"><%= link_to "Summer Checklist", summer_path %></li>
+  <li class="select-li"><%= link_to "Winter Checklist", winter_path %></li>
+  <li><%= link_to "Ultralight Checklist", ultralight_path %></li>
+</ul>
+
+<h2 class="ul-list-header">Sleeping</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Sleeping Bag" class="list-check" /></td>
+    <td class="list-item-name"><label for="Sleeping Bag">Sleeping Bag</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'sleeping bag'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Sleeping Bags", class: "list-merchant", rel: "tooltip", title: "Sleeping Bags at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500001_Sleeping%2BBags" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Sleeping Bags", class: "list-merchant", rel: "tooltip", title: "Sleeping Bags at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsleeping-bags" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Sleeping Bags", class: "list-merchant", rel: "tooltip", title: "Sleeping Bags at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=sleeping%20bag&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Sleeping Pad" class="list-check" /></td>
+    <td class="list-item-name"><label for="Sleeping Pad">Sleeping Pad</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'sleeping pad'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Sleeping Pad", class: "list-merchant", rel: "tooltip", title: "Sleeping Pads at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500001_Sleeping%2BPads" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Sleeping Pad", class: "list-merchant", rel: "tooltip", title: "Sleeping Pads at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsleeping-pads" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Sleeping Pad", class: "list-merchant", rel: "tooltip", title: "Sleeping Pads at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=sleeping%20pad&linkCode=ur2&tag=scrowed-20" %></td>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Pillow" class="list-check" /></td>
+    <td class="list-item-name"><label for="Pillow">Pillow <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'pillow'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Pillow", class: "list-merchant", rel: "tooltip", title: "Pillows at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4723203" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Pillow", class: "list-merchant", rel: "tooltip", title: "Pillows at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcamping-pillows" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Pillow", class: "list-merchant", rel: "tooltip", title: "Pillows at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=pillow&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Sleeping Bag Liner" class="list-check" /></td>
+    <td class="list-item-name"><label for="Sleeping Bag Liner">Sleeping Bag Liner <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'sleeping bag liner'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Sleeping Bag Liner", class: "list-merchant", rel: "tooltip", title: "Sleeping Bag Liners at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500592" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Sleeping Bag Liner", class: "list-merchant", rel: "tooltip", title: "Sleeping Bag Liners at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsleeping-bag-liners" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Sleeping Bag Liner", class: "list-merchant", rel: "tooltip", title: "Sleeping Bag Liners at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=sleeping%20bag%20liner&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Shelter</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Tent" class="list-check" /></td>
+    <td class="list-item-name"><label for="Tent">Tent / Tarp / Bivy / Hammock</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'tent'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Tent / Tarp / Bivy / Hammock", class: "list-merchant", rel: "tooltip", title: "Tents / Tarps / Bivys / Hammocks at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500001_Tents%2Band%2BShelters" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Tent / Tarp / Bivy / Hammock", class: "list-merchant", rel: "tooltip", title: "Tents / Tarps / Bivys / Hammocks at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Ftents" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Tent / Tarp / Bivy / Hammock", class: "list-merchant", rel: "tooltip", title: "Tents / Tarps / Bivys / Hammocks at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=tent&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Tent Stakes" class="list-check" /></td>
+    <td class="list-item-name"><label for="Tent Stakes">Tent Stakes</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'tent stakes'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Tent Stakes", class: "list-merchant", rel: "tooltip", title: "Tent Stakes at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500663" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Tent Stakes", class: "list-merchant", rel: "tooltip", title: "Tent Stakes at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fstakes" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Tent Stakes", class: "list-merchant", rel: "tooltip", title: "Tent Stakes at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=tent%20stakes&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Ground Sheet" class="list-check" /></td>
+    <td class="list-item-name"><label for="Ground Sheet">Ground Sheet <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'tent footprint'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Ground Sheet", class: "list-merchant", rel: "tooltip", title: "Ground Sheets at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40004500" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Ground Sheet", class: "list-merchant", rel: "tooltip", title: "Ground Sheets at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Ffootprints-vestibules" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Ground Sheet", class: "list-merchant", rel: "tooltip", title: "Ground Sheets at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=tent%20footprint&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Water</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Water Filter" class="list-check" /></td>
+    <td class="list-item-name"><label for="Water Filter">Water Filter / Water Purifier</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'water filter'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Water Filter / Water Purifier", class: "list-merchant", rel: "tooltip", title: "Water Filters / Water Purifiers at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500030" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Water Filter / Water Purifier", class: "list-merchant", rel: "tooltip", title: "Water Filters / Water Purifiers at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fwater-filters" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Water Filter / Water Purifier", class: "list-merchant", rel: "tooltip", title: "Water Filters / Water Purifiers at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=water%20filter&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Water Bottle" class="list-check" /></td>
+    <td class="list-item-name"><label for="Water Bottle">Water Bottle</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'water bottle'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Bottle", class: "list-merchant", rel: "tooltip", title: "Water Bottles at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F5760722" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Water Bottle", class: "list-merchant", rel: "tooltip", title: "Water Bottles at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fwater-bottles" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Water Bottle", class: "list-merchant", rel: "tooltip", title: "Water Bottles at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20water%20bottle&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Cookware / Plateware</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Pots" class="list-check" /></td>
+    <td class="list-item-name"><label for="Pots">Pots and Pans</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'pots pans'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI >Pots and Pans", class: "list-merchant", rel: "tooltip", title: "Pots and Pans at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F5760721" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry >Pots and Pans", class: "list-merchant", rel: "tooltip", title: "Pots and Pans at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fpots-pans" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon >Pots and Pans", class: "list-merchant", rel: "tooltip", title: "Pots and Pans at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20pot&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Plates" class="list-check" /></td>
+    <td class="list-item-name"><label for="Plates">Plates / Bowls</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'plate bowl'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Plates / Bowls", class: "list-merchant", rel: "tooltip", title: "Plates / Bowls at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F5760715" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Plates / Bowls", class: "list-merchant", rel: "tooltip", title: "Plates / Bowls at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fplates-bowls" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Plates / Bowls", class: "list-merchant", rel: "tooltip", title: "Plates / Bowls at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20plate&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Cups" class="list-check" /></td>
+    <td class="list-item-name"><label for="Cups">Cups</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'cup'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Cups", class: "list-merchant", rel: "tooltip", title: "Cups at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40006317" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Cups", class: "list-merchant", rel: "tooltip", title: "Cups at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcups-mugs-flasks" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Cups", class: "list-merchant", rel: "tooltip", title: "Cups at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20cup&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Utensils" class="list-check" /></td>
+    <td class="list-item-name"><label for="Utensils">Utensils</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'utensil``'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Utensils", class: "list-merchant", rel: "tooltip", title: "Utensils at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F5760717" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Utensils", class: "list-merchant", rel: "tooltip", title: "Utensils at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fflatware-utensils" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Utensils", class: "list-merchant", rel: "tooltip", title: "Utensils at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20utensils&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Cooking</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Stove" class="list-check" /></td>
+    <td class="list-item-name"><label for="Stove">Stove</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'stove'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Stove", class: "list-merchant", rel: "tooltip", title: "Stoves at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500001_Stoves" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Stove", class: "list-merchant", rel: "tooltip", title: "Stoves at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcamping-stoves" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Stove", class: "list-merchant", rel: "tooltip", title: "Stoves at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20stove&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Fuel Bottle" class="list-check" /></td>
+    <td class="list-item-name"><label for="Fuel Bottle">Fuel Bottle</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'fuel bottle'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Fuel Bottle", class: "list-merchant", rel: "tooltip", title: "Fuel Bottles at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F5760743" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Fuel Bottle", class: "list-merchant", rel: "tooltip", title: "Fuel Bottles at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Ffuel-bottles-accessories" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Fuel Bottle", class: "list-merchant", rel: "tooltip", title: "Fuel Bottles at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20fuel%20bottle&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Windscreen" class="list-check" /></td>
+    <td class="list-item-name"><label for="Windscreen">Windscreen <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'windscreen'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Windscreen", class: "list-merchant", rel: "tooltip", title: "Windscreens at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500067" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Windscreen", class: "list-merchant", rel: "tooltip", title: "Windscreens at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fstove-accessories" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Windscreen", class: "list-merchant", rel: "tooltip", title: "Windscreens at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20stove%20windscreen&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Matches" class="list-check" /></td>
+    <td class="list-item-name"><label for="Matches">Matches / Lighter</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'matches lighter'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Matches / Lighter", class: "list-merchant", rel: "tooltip", title: "Matches / Lighters at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40006515" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Matches / Lighter", class: "list-merchant", rel: "tooltip", title: "Matches / Lighters at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Flighters" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Matches / Lighter", class: "list-merchant", rel: "tooltip", title: "Matches / Lighters at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20matches&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Dish Soap" class="list-check" /></td>
+    <td class="list-item-name"><label for="Dish Soap">Dish Soap</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'soap'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Dish Soap", class: "list-merchant", rel: "tooltip", title: "Dish Soap at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500611" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Dish Soap", class: "list-merchant", rel: "tooltip", title: "Dish Soap at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcamping-accessories" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Dish Soap", class: "list-merchant", rel: "tooltip", title: "Dish Soap at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20soap&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Carrying</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Backpack" class="list-check" /></td>
+    <td class="list-item-name"><label for="Backpack">Backpack</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'backpack'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Backpack", class: "list-merchant", rel: "tooltip", title: "Backpacks at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500001_Backpacks" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Backpack", class: "list-merchant", rel: "tooltip", title: "Backpacks at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fbackpacks" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Backpack", class: "list-merchant", rel: "tooltip", title: "Backpacks at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpack&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Pack Liner" class="list-check" /></td>
+    <td class="list-item-name"><label for="Pack Liner">Pack Liner / Pack Cover <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'pack cover'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Pack Liner / Pack Cover", class: "list-merchant", rel: "tooltip", title: "Pack Liners / Pack Covers at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500602" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Pack Liner / Pack Cover", class: "list-merchant", rel: "tooltip", title: "Pack Liners / Pack Covers at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fwinter-pack-accessories" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Pack Liner / Pack Cover", class: "list-merchant", rel: "tooltip", title: "Pack Liners / Pack Covers at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=pack%20cover&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Stuff Sacks" class="list-check" /></td>
+    <td class="list-item-name"><label for="Stuff Sacks">Stuff Sacks <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'stuff sack'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Stuff Sacks", class: "list-merchant", rel: "tooltip", title: "Stuff Sacks at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40006345" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Stuff Sacks", class: "list-merchant", rel: "tooltip", title: "Stuff Sacks at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fstuff-compression-sacks" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Stuff Sacks", class: "list-merchant", rel: "tooltip", title: "Stuff Sacks at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=stuff%20sack&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Feet</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Socks" class="list-check" /></td>
+    <td class="list-item-name"><label for="Socks">Socks</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'socks'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Socks", class: "list-merchant", rel: "tooltip", title: "Socks at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500230" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Socks", class: "list-merchant", rel: "tooltip", title: "Socks at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsockslist-merchant" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Socks", class: "list-merchant", rel: "tooltip", title: "Socks at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20socks&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Boots" class="list-check" /></td>
+    <td class="list-item-name"><label for="Boots">Shoes / Boots</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'boots shoes'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Shoes / Boots", class: "list-merchant", rel: "tooltip", title: "Shoes / Boots at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500006_Men%2527s%2BFootwear%2Fq%2FMen%2527s%2BShoes" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Shoes / Boots", class: "list-merchant", rel: "tooltip", title: "Shoes / Boots at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fshoes-footwear" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Shoes / Boots", class: "list-merchant", rel: "tooltip", title: "Shoes / Boots at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20shoes&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Gaiters" class="list-check" /></td>
+    <td class="list-item-name"><label for="Gaiters">Gaiters <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'gaiters'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Gaiters", class: "list-merchant", rel: "tooltip", title: "Gaiters at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4501822" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Gaiters", class: "list-merchant", rel: "tooltip", title: "Gaiters at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fgaiters" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Gaiters", class: "list-merchant", rel: "tooltip", title: "Gaiters at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=gaiters&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Camp Shoes" class="list-check" /></td>
+    <td class="list-item-name"><label for="Camp Shoes">Camp Shoes / Sandals <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'sandals'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Camp Shoes / Sandals", class: "list-merchant", rel: "tooltip", title: "Camp Shoes / Sandals at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40003529" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Camp Shoes / Sandals", class: "list-merchant", rel: "tooltip", title: "Camp Shoes / Sandals at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-sandals" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Camp Shoes / Sandals", class: "list-merchant", rel: "tooltip", title: "Camp Shoes / Sandals at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=hiking%20sandals&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Clothes</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Waterproof Tops" class="list-check" /></td>
+    <td class="list-item-name"><label for="Waterproof Tops">Waterproof Tops</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'rain jacket'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Waterproof Tops", class: "list-merchant", rel: "tooltip", title: "Waterproof Tops at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4501456" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Waterproof Tops", class: "list-merchant", rel: "tooltip", title: "Waterproof Tops at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-rain-jackets" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Waterproof Tops", class: "list-merchant", rel: "tooltip", title: "Waterproof Tops at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20rain%20jacket&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Waterproof Bottoms" class="list-check" /></td>
+    <td class="list-item-name"><label for="Waterproof Bottoms">Waterproof Bottoms</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'rain pants'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Waterproof Bottoms", class: "list-merchant", rel: "tooltip", title: "Waterproof Bottoms at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40004586" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Waterproof Bottoms", class: "list-merchant", rel: "tooltip", title: "Waterproof Bottoms at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-rain-pants" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Waterproof Bottoms", class: "list-merchant", rel: "tooltip", title: "Waterproof Bottoms at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20rain%20pants&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Warm Tops" class="list-check" /></td>
+    <td class="list-item-name"><label for="Warm Tops">Warm Tops</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'warm tops'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Warm Tops", class: "list-merchant", rel: "tooltip", title: "Warm Tops at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40004574" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Warm Tops", class: "list-merchant", rel: "tooltip", title: "Warm Tops at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-down-jackets" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Warm Tops", class: "list-merchant", rel: "tooltip", title: "Warm Tops at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=down%20jacket&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Warm Bottoms" class="list-check" /></td>
+    <td class="list-item-name"><label for="Warm Bottoms">Warm Bottoms</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'warm bottoms'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Warm Bottoms", class: "list-merchant", rel: "tooltip", title: "Warm Bottoms at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40004608" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Warm Bottoms", class: "list-merchant", rel: "tooltip", title: "Warm Bottoms at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-long-underwear-bottoms" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Warm Bottoms", class: "list-merchant", rel: "tooltip", title: "Warm Bottoms at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=long%20underwear&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Shirts" class="list-check" /></td>
+    <td class="list-item-name"><label for="Shirts">Shirts</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'shirt'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Shirts", class: "list-merchant", rel: "tooltip", title: "Shirts at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500259" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Shirts", class: "list-merchant", rel: "tooltip", title: "Shirts at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-shirts" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Shirts", class: "list-merchant", rel: "tooltip", title: "Shirts at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20shirt&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Pants" class="list-check" /></td>
+    <td class="list-item-name"><label for="Pants">Pants / Shorts</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'pants shorts'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Pants / Shorts", class: "list-merchant", rel: "tooltip", title: "Pants / Shorts at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40005464" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Pants / Shorts", class: "list-merchant", rel: "tooltip", title: "Pants / Shorts at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-pants" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Pants / Shorts", class: "list-merchant", rel: "tooltip", title: "Pants / Shorts at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20pant&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Hat" class="list-check" /></td>
+    <td class="list-item-name"><label for="Hat">Hat</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'hat'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Hat", class: "list-merchant", rel: "tooltip", title: "Hats at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40003701" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Hat", class: "list-merchant", rel: "tooltip", title: "Hats at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fhats-caps-beanies" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Hat", class: "list-merchant", rel: "tooltip", title: "Hats at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20hat&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+  <td class="checkbox-column"><input type="checkbox" id="Bandana" class="list-check" /></td>
+    <td class="list-item-name"><label for="Bandana">Bandana <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'bandana'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Bandana", class: "list-merchant", rel: "tooltip", title: "Bandanas at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4501820" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Bandana", class: "list-merchant", rel: "tooltip", title: "Bandanas at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fbandanas-ninja-masks" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Bandana", class: "list-merchant", rel: "tooltip", title: "Bandanas at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=bandana&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Gloves" class="list-check" /></td>
+    <td class="list-item-name"><label for="Gloves">Gloves</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'gloves'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Gloves", class: "list-merchant", rel: "tooltip", title: "Gloves at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500254" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Gloves", class: "list-merchant", rel: "tooltip", title: "Gloves at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fgloves-mittens" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Gloves", class: "list-merchant", rel: "tooltip", title: "Gloves at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20gloves&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Underwear" class="list-check" /></td>
+    <td class="list-item-name"><label for="Underwear">Underwear</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'underwear'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Underwear", class: "list-merchant", rel: "tooltip", title: "Underwear at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500250" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Underwear", class: "list-merchant", rel: "tooltip", title: "Underwear at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fmens-underwear" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Underwear", class: "list-merchant", rel: "tooltip", title: "Underwear at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20underwear&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Navigation</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Compass" class="list-check" /></td>
+    <td class="list-item-name"><label for="Compass">Compass <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'compass'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Compass", class: "list-merchant", rel: "tooltip", title: "Compasses at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500059" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Compass", class: "list-merchant", rel: "tooltip", title: "Compasses at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcompasses" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Compass", class: "list-merchant", rel: "tooltip", title: "Compasses at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20compass&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="GPS" class="list-check" /></td>
+    <td class="list-item-name"><label for="GPS">GPS <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'gps'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI GPS", class: "list-merchant", rel: "tooltip", title: "GPS at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40005559" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry GPS", class: "list-merchant", rel: "tooltip", title: "GPS at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fgps" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon GPS", class: "list-merchant", rel: "tooltip", title: "GPS at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=gps&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Watch" class="list-check" /></td>
+    <td class="list-item-name"><label for="Watch">Watch <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'watch'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Watch", class: "list-merchant", rel: "tooltip", title: "Watches at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500074" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Watch", class: "list-merchant", rel: "tooltip", title: "Watches at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fwatches" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Watch", class: "list-merchant", rel: "tooltip", title: "Watches at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=hiking%20watch&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Map" class="list-check" /></td>
+    <td class="list-item-name"><label for="Map">Map <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'map'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Map", class: "list-merchant", rel: "tooltip", title: "Maps at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500000" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Map", class: "list-merchant", rel: "tooltip", title: "Maps at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fbooks-maps" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Map", class: "list-merchant", rel: "tooltip", title: "Maps at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=wilderness%20maps&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Misc</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Knife" class="list-check" /></td>
+    <td class="list-item-name"><label for="Knife">Knife / Multi-Tool</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'knife multi tool'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Knife / Multi-Tool", class: "list-merchant", rel: "tooltip", title: "Knives / Multi-Tools at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500055" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Knife / Multi-Tool", class: "list-merchant", rel: "tooltip", title: "Knives / Multi-Tools at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fknives-saws-multi-tools" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Knife / Multi-Tool", class: "list-merchant", rel: "tooltip", title: "Knives / Multi-Tools at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20knife&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Trekking Poles" class="list-check" /></td>
+    <td class="list-item-name"><label for="Trekking Poles">Trekking Poles <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'trekking poles'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Trekking Poles", class: "list-merchant", rel: "tooltip", title: "Trekking Poles at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500049" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Trekking Poles", class: "list-merchant", rel: "tooltip", title: "Trekking Poles at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Ftrekking-poles" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Trekking Poles", class: "list-merchant", rel: "tooltip", title: "Trekking Poles at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=trekking%20poles&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Ice Axe" class="list-check" /></td>
+    <td class="list-item-name"><label for="Ice Axe">Ice Axe <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'ice axe'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Ice Axe", class: "list-merchant", rel: "tooltip", title: "Ice Axes at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500691" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Ice Axe", class: "list-merchant", rel: "tooltip", title: "Ice Axes at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fice-axes" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Ice Axe", class: "list-merchant", rel: "tooltip", title: "Ice Axes at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=ice%20axe&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Duct Tape" class="list-check" /></td>
+    <td class="list-item-name"><label for="Duct Tape">Duct Tape <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'duct tape'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Duct Tape", class: "list-merchant", rel: "tooltip", title: "Duct Tape at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500523" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Duct Tape", class: "list-merchant", rel: "tooltip", title: "Duct Tape at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsurvival-kits" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Duct Tape", class: "list-merchant", rel: "tooltip", title: "Duct Tape at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20duct%20tape&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Bear Canister" class="list-check" /></td>
+    <td class="list-item-name"><label for="Bear Canister">Bear Canister <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'bear canister'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Bear Canister", class: "list-merchant", rel: "tooltip", title: "Bear Canisters at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F5760733" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Bear Canister", class: "list-merchant", rel: "tooltip", title: "Bear Canisters at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fbear-resistant" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Bear Canister", class: "list-merchant", rel: "tooltip", title: "Bear Canisters at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=bear%20canister&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Camera" class="list-check" /></td>
+    <td class="list-item-name"><label for="Camera">Camera <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'camera'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Camera", class: "list-merchant", rel: "tooltip", title: "Cameras at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4760429" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Camera", class: "list-merchant", rel: "tooltip", title: "Cameras at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fdigital-cameras" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Camera", class: "list-merchant", rel: "tooltip", title: "Cameras at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=photo&keywords=camera&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Emergency Supplies</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Whistle" class="list-check" /></td>
+    <td class="list-item-name"><label for="Whistle">Whistle <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'whistle'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Whistle", class: "list-merchant", rel: "tooltip", title: "Whistles at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500525" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Whistle", class: "list-merchant", rel: "tooltip", title: "Whistles at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fwhistles" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Whistle", class: "list-merchant", rel: "tooltip", title: "Whistles at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=emergency%20whistle&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="First Aid Kit" class="list-check" /></td>
+    <td class="list-item-name"><label for="First Aid Kit">First Aid Kit <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'first aid kit'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI First Aid Kit", class: "list-merchant", rel: "tooltip", title: "First Aid Kits at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500543" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry First Aid Kit", class: "list-merchant", rel: "tooltip", title: "First Aid Kits at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fwilderness-first-aid" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon First Aid Kit", class: "list-merchant", rel: "tooltip", title: "First Aid Kits at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20first%20aid%kit&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Signal Mirror" class="list-check" /></td>
+    <td class="list-item-name"><label for="Signal Mirror">Signal Mirror <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'signal mirror'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Signal Mirror", class: "list-merchant", rel: "tooltip", title: "Signal Mirrors at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500524" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Signal Mirror", class: "list-merchant", rel: "tooltip", title: "Signal Mirrors at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsignal-mirrors-strobe-lights" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Signal Mirror", class: "list-merchant", rel: "tooltip", title: "Signal Mirrors at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=signal%20mirror&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Cord" class="list-check" /></td>
+    <td class="list-item-name"><label for="Cord">Cord <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'cord'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Cord", class: "list-merchant", rel: "tooltip", title: "Cord at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500703" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Cord", class: "list-merchant", rel: "tooltip", title: "Cord at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Faccessory-cord" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Cord", class: "list-merchant", rel: "tooltip", title: "Cord at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=cord&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Bear Spray" class="list-check" /></td>
+    <td class="list-item-name"><label for="Bear Spray">Bear Spray <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'bear spray'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Bear Spray", class: "list-merchant", rel: "tooltip", title: "Bear Sprays at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40006517" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Bear Spray", class: "list-merchant", rel: "tooltip", title: "Bear Sprays at Backcountry"), "http://www.backcountry.com/bear-resistant" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Bear Spray", class: "list-merchant", rel: "tooltip", title: "Bear Sprays at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=bear%20spray&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Sun / Bug Protection</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Sunglasses" class="list-check" /></td>
+    <td class="list-item-name"><label for="Sunglasses">Sunglasses <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'sunglasses'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Sunglasses", class: "list-merchant", rel: "tooltip", title: "Sunglasses at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500069" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Sunglasses", class: "list-merchant", rel: "tooltip", title: "Sunglasses at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsunglasses" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Sunglasses", class: "list-merchant", rel: "tooltip", title: "Sunglasses at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=hiking%20sunglasses&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Sunscreen" class="list-check" /></td>
+    <td class="list-item-name"><label for="Sunscreen">Sunscreen <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'sunscreen'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Sunscreen", class: "list-merchant", rel: "tooltip", title: "Sunscreen at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500643" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Sunscreen", class: "list-merchant", rel: "tooltip", title: "Sunscreen at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsunscreen" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Sunscreen", class: "list-merchant", rel: "tooltip", title: "Sunscreen at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=sunscreen&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Lip Balm" class="list-check" /></td>
+    <td class="list-item-name"><label for="Lip Balm">Lip Balm <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'lip balm'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Lip Balm", class: "list-merchant", rel: "tooltip", title: "Lip Balm at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500642" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Lip Balm", class: "list-merchant", rel: "tooltip", title: "Lip Balm at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsunscreen" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Lip Balm", class: "list-merchant", rel: "tooltip", title: "Lip Balm at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=lip%20balm&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Bug Spray" class="list-check" /></td>
+    <td class="list-item-name"><label for="Bug Spray">Bug Spray <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'insect repellent'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Bug Spray", class: "list-merchant", rel: "tooltip", title: "Bug Spray at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500050" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Bug Spray", class: "list-merchant", rel: "tooltip", title: "Bug Spray at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Finsect-repellant" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Bug Spray", class: "list-merchant", rel: "tooltip", title: "Bug Spray at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=insect%20repellent&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Mosquito Headnet" class="list-check" /></td>
+    <td class="list-item-name"><label for="Mosquito Headnet">Mosquito Headnet <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'mosquito headnet'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Mosquito Headnet", class: "list-merchant", rel: "tooltip", title: "Mosquito Headnets at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500559" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Mosquito Headnet", class: "list-merchant", rel: "tooltip", title: "Mosquito Headnets at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fscreen-rooms" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Mosquito Headnet", class: "list-merchant", rel: "tooltip", title: "Mosquito Headnets at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=mosquito%20headnet&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Toiletries</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Toilet Paper" class="list-check" /></td>
+    <td class="list-item-name"><label for="Toilet Paper">Toilet Paper</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'toilet paper'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Toilet Paper", class: "list-merchant", rel: "tooltip", title: "Toilet Paper at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500612" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Toilet Paper", class: "list-merchant", rel: "tooltip", title: "Toilet Paper at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fouthouses" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Toilet Paper", class: "list-merchant", rel: "tooltip", title: "Toilet Paper at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20toilet%20paper&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Toothbrush" class="list-check" /></td>
+    <td class="list-item-name"><label for="Toothbrush">Toothbrush</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'toothbrush'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Toothbrush", class: "list-merchant", rel: "tooltip", title: "Toothbrushes at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500613" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Toothbrush", class: "list-merchant", rel: "tooltip", title: "Toothbrushes at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Ftoiletries" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Toothbrush", class: "list-merchant", rel: "tooltip", title: "Toothbrushes at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=camping%20toothbrush&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Toothpaste" class="list-check" /></td>
+    <td class="list-item-name"><label for="Toothpaste">Toothpaste</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'toothpaste'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Toothpaste", class: "list-merchant", rel: "tooltip", title: "Toothpaste at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500613" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Toothpaste", class: "list-merchant", rel: "tooltip", title: "Toothpaste at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Ftoiletries" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Toothpaste", class: "list-merchant", rel: "tooltip", title: "Toothpaste at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=toothpaste&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Body Soap" class="list-check" /></td>
+    <td class="list-item-name"><label for="Body Soap">Body Soap</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'soap'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Body Soap", class: "list-merchant", rel: "tooltip", title: "Body Soap at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500611" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Body Soap", class: "list-merchant", rel: "tooltip", title: "Body Soap at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcamping-accessories" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Body Soap", class: "list-merchant", rel: "tooltip", title: "Body Soap at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20soap&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Backpacking Towel" class="list-check" /></td>
+    <td class="list-item-name"><label for="Backpacking Towel">Backpacking Towel <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'towel'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Backpacking Towel", class: "list-merchant", rel: "tooltip", title: "Backpacking Towels at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500614" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Backpacking Towel", class: "list-merchant", rel: "tooltip", title: "Backpacking Towels at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcamp-towels" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Backpacking Towel", class: "list-merchant", rel: "tooltip", title: "Backpacking Towels at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20towel&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Lighting</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Headlamp" class="list-check" /></td>
+    <td class="list-item-name"><label for="Headlamp">Headlamp / Flashlight</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'headlamp'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Headlamp / Flashlight", class: "list-merchant", rel: "tooltip", title: "Headlamps / Flashlights at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40006352" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Headlamp / Flashlight", class: "list-merchant", rel: "tooltip", title: "Headlamps / Flashlights at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Flighting" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Headlamp / Flashlight", class: "list-merchant", rel: "tooltip", title: "Headlamps / Flashlights at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=headlamp&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Extra Batteries" class="list-check" /></td>
+    <td class="list-item-name"><label for="Extra Batteries">Extra Batteries <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'battery'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Extra Batteries", class: "list-merchant", rel: "tooltip", title: "Extra Batteries at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500031" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Extra Batteries", class: "list-merchant", rel: "tooltip", title: "Extra Batteries at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fbatteries-solar-power" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Extra Batteries", class: "list-merchant", rel: "tooltip", title: "Extra Batteries at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=batteries&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Fire</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Flint" class="list-check" /></td>
+    <td class="list-item-name"><label for="Flint">Flint / Matches</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'flint'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Flint / Matches", class: "list-merchant", rel: "tooltip", title: "Strikers / Matches at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500638" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Flint / Matches", class: "list-merchant", rel: "tooltip", title: "Strikers / Matches at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Flighters" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Flint / Matches", class: "list-merchant", rel: "tooltip", title: "Strikers / Matches at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=flint&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Fire Paste" class="list-check" /></td>
+    <td class="list-item-name"><label for="Fire Paste">Fire Paste / Cotton Balls / Etc <i class="optional">(optional)</i></label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'tinder'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Fire Paste / Cotton Balls", class: "list-merchant", rel: "tooltip", title: "Fire Pastes / Cotton Balls at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F40006521" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Fire Paste / Cotton Balls", class: "list-merchant", rel: "tooltip", title: "Fire Pastes / Cotton Balls at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fsurvival-kits" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Fire Paste / Cotton Balls", class: "list-merchant", rel: "tooltip", title: "Fire Pastes / Cotton Balls at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=tinder&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+<h2 class="ul-list-header">Food</h2>
+<table class="ul-list-section">
+  <tr>
+    <td class="checkbox-column"><input type="checkbox" id="Backpacking Food" class="list-check" /></td>
+    <td class="list-item-name"><label for="Backpacking Food">Backpacking Food</label></td>
+    <td><%= link_to "Sale Search", sale_search_path(:keyword => 'food'), class: "btn btn-small btn-info" %></td>
+    <td><%= link_to image_tag("rei.jpg", alt: "REI Backpacking Food", class: "list-merchant", rel: "tooltip", title: "Backpacking Food at REI"), "http://www.avantlink.com/click.php?tt=cl&mi=10248&pw=41369&url=http%3A%2F%2Fwww.rei.com%2Fcategory%2F4500042" %></td>
+    <td><%= link_to image_tag("backcountry.jpg", alt: "Backcountry Backpacking Food", class: "list-merchant", rel: "tooltip", title: "Backpacking Food at Backcountry"), "http://www.avantlink.com/click.php?tt=cl&mi=10060&pw=41369&url=http%3A%2F%2Fwww.backcountry.com%2Fcamping-food" %></td>
+    <td><%= link_to image_tag("amazon.jpg", alt: "Amazon Backpacking Food", class: "list-merchant", rel: "tooltip", title: "Backpacking Food at Amazon"), "http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=sporting&keywords=backpacking%20food&linkCode=ur2&tag=scrowed-20" %></td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+</script>

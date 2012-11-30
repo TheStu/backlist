@@ -1,0 +1,3 @@
+<% provide(:title, "Winter Backpacking Checklist") %>
+<h1>Statics#winter</h1>
+<p>Find me in app/views/statics/winter.html.erb</p>
