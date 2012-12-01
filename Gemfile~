@@ -29,6 +29,7 @@ end
   gem "heroku", "~> 2.33.2"
   gem "exception_notification", "~> 3.0.0"
   gem "google-analytics-rails", "~> 0.0.3"
+  gem "nokogiri", "~> 1.5.5"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
