@@ -28,6 +28,7 @@ end
 
   gem 'jquery-rails'
   gem "thin", "~> 1.5.0"
+  gem "pg", "~> 0.14.1"
   gem "heroku", "~> 2.33.2"
   gem "exception_notification", "~> 3.0.0"
   gem "google-analytics-rails", "~> 0.0.3"
