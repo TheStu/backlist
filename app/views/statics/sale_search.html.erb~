@@ -1,6 +1,24 @@
-<ul>
-  <%= @results.each do |result| %>
-    <li><%= result["Product_Name"] %></li>
+<% provide(:desc, "Find sales on backpacking gear to fill in the missing pieces on your backpacking checklist") %>
+<% if @results.count > 0 %>
+  <h2 class="sale-search-h2"><%= @results.count %> Search Results for '<%= params[:keyword] %>'</h2>
+  <%= form_tag sale_search_path, :method => 'get', class: "sale-search-form" do %>
+    <%= text_field_tag :keyword, params[:keyword] %>
+    <%= submit_tag "Search", :name => nil, class: "btn btn-info" %>
   <% end %>
-</ul>
+  <table class="sale-search-table">
+    <% @results.each do |result| %>
+      <tr>
+        <td class="image-container"><a href="<%= result["Buy_URL"] %>", rel="nofollow", target="_blank"><span class="drop-shadow lifted"><%= image_tag result["Thumbnail_Image"], class: "search-result-image" %></span></a></td>
+        <td class="product-td"><a href="<%= result["Buy_URL"] %>", rel="nofollow", target="_blank"><%= content_tag :p, truncate(brand_fix(result), :length => 45, :omission => '...'), class: "product-name" %></a><%= content_tag :p, truncate(result["Description"], :length => 225, :omission => '...'), class: "product-desc" %></td>
+        <td class="price-td"><a href="<%= result["Buy_URL"] %>", rel="nofollow", target="_blank"><%= content_tag :p, result["Retail_Price"], class: "retail-price" %><%= content_tag :p, result["Sale_Price"], class: "sale-price" %><p class="from-merchant"><%= name_fix(result["Merchant_Name"]) %></p></a></td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <h2 class="sale-search-h2"><%= @results.count %> Search Results for '<%= params[:keyword] %>'</h2>
+  <%= form_tag sale_search_path, :method => 'get', class: "sale-search-form" do %>
+    <%= text_field_tag :keyword, params[:keyword] %>
+    <%= submit_tag "Search", :name => nil, class: "btn btn-info" %>
+  <% end %>
+<% end %>
 

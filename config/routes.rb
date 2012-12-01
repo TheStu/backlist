@@ -6,5 +6,5 @@ Backlist::Application.routes.draw do
   match '/ultralight-backpacking-checklist', to: 'statics#ultralight', as: 'ultralight'
   match '/summer-backpacking-checklist', to: 'statics#summer', as: 'summer'
   match '/winter-backpacking-checklist', to: 'statics#winter', as: 'winter'
-  match '/sale_search', to: 'statics#sale_search'
+  match '/sale-search', to: 'statics#sale_search', as: 'sale_search'
 end

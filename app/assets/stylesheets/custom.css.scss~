@@ -4,6 +4,9 @@ $border: #dedede;
 
 .navbar {
   font-family: 'Merriweather', serif;
+  .brand {
+    padding: 9px 20px;
+  }
 }
 
 // ************ SIDEBAR *************** //
@@ -18,13 +21,10 @@ $border: #dedede;
 
 // ************ LISTS *************** //
 
-.select-checklist {
-  @include horizontal-list;
+.list-h1 {
   font-family: 'Merriweather', serif;
-  padding: 10px 10px 10px 50px;
-  .select-li {
-    border-right: 1px solid #999;
-  }
+  padding: 10px 0;
+  font-size: 30px;
 }
 
 h2 {
@@ -45,7 +45,7 @@ h2 {
       }
     }
     .list-item-name {
-      width: 500px;
+      width: 420px;
       font-family: 'Merriweather', serif;
       font-size: 16px;
       label {
@@ -68,6 +68,131 @@ h2 {
   }
 }
 
-// ************ ABOUT *************** //
+// ************ SALE SEARCH *************** //
 
-// ************ CONTACT *************** //
+.sale-search-h2 {
+  padding: 10px 0;
+}
+
+.sale-search-form {
+  input {
+    margin: 0;
+  }
+}
+
+.sale-search-table {
+  border-bottom: 1px dotted #ccc;
+  tr {
+    border-top: 1px dotted #ccc;
+    .product-name {
+      font-family: 'Merriweather', serif;
+      font-size: 14px;
+      padding-top: 5px;
+      font-weight: bold;
+    } 
+    .product-desc {
+      font-size: 13px;
+    }
+    .search-result-image {
+      max-height: 100px;
+      max-width: 100px;
+    }
+    .image-container {
+      padding: 5px 0;
+    }
+    .product-td, .price-td {
+      vertical-align: top;
+    }
+    .retail-price {
+      text-decoration: line-through;
+      font-weight: bold;
+      font-size: 28px;
+      font-family: 'Merriweather', serif;
+      color: #333;
+      padding-top: 10px;
+      float: right;
+    }
+    .sale-price {
+      font-weight: bold;
+      font-size: 28px;
+      font-family: 'Merriweather', serif;
+      float: right;
+      clear: right;
+      padding-top: 5px;
+    }
+    .from-merchant {
+      color: #aaa;
+      font-family: 'Merriweather', serif;
+      font-size: 11px;
+      float: right;
+      clear: right;
+    }
+  }
+}
+
+.drop-shadow {
+    position:relative;
+    float:left;
+    //width:40%;
+    //padding:1em;
+    //margin:2em 10px 4em;
+    margin: 0 10px 0 0;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}
+
+.lifted {
+    -moz-border-radius:4px;
+         border-radius:4px;
+         padding: 3px; //added by me
+}
+
+.lifted:before,
+.lifted:after {
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-height:100px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+            box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);
+       -moz-transform:rotate(-3deg);
+        -ms-transform:rotate(-3deg);
+         -o-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+}
+
+.lifted:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);
+       -moz-transform:rotate(3deg);
+        -ms-transform:rotate(3deg);
+         -o-transform:rotate(3deg);
+            transform:rotate(3deg);
+}
+
+// ************ MISC PAGES *************** //
+
+.static-text {
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  color: #666;
+  line-height: 24px;
+}
+
+.static-h1 {
+  font-family: 'Merriweather', serif;
+  padding: 10px 0;
+}

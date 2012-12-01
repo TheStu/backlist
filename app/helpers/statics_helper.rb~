@@ -1,0 +1,7 @@
+module StaticsHelper
+
+  def brand_fix(result)
+  fixed = result["Product_Name"].gsub("#{result["Brand_Name"]}", "")
+  return "#{result["Brand_Name"]} #{fixed}"  
+  end
+end

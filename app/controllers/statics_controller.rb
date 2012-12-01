@@ -18,7 +18,11 @@ class StaticsController < ApplicationController
   end
   
   def sale_search
-    @results = av_search(params[:keyword])
+    if params[:keyword].present?
+      @results = av_search(params[:keyword])
+    else
+      @results = []
+    end
   end
   
   private
