@@ -1,4 +1,5 @@
 <% provide(:title, "Ultralight Backpacking Checklist") %>
+<% provide(:desc, "A comprehensive ultralight backpacking checklist to help you save weight on your backpacking adventures") %>
 <h1 class="list-h1">Ultralight Backpacking Checklist</h1>
 <h2 class="ul-list-header">Sleeping</h2>
 <table class="ul-list-section">

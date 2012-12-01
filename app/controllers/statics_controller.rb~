@@ -20,6 +20,8 @@ class StaticsController < ApplicationController
   def sale_search
     if params[:keyword].present?
       @results = av_search(params[:keyword])
+    else
+      @results = []
     end
   end
   

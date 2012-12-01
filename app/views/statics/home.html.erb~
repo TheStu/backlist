@@ -1,5 +1,5 @@
 <% provide(:title, "home") %>
-<% provide(:desc, "Reviews for the #{gear_title(@found_gear)}, plus questions, answers, prices, and comparisons with #{@gear_count} other #{@found_gear.category.to_s.titleize.downcase}") %>
+<% provide(:desc, "") %>
 <h1 class="list-h1">General Backpacking Checklist</h1>
 <h2 class="ul-list-header">Sleeping</h2>
 <table class="ul-list-section">

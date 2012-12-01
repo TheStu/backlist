@@ -1,5 +1,9 @@
 $border: #dedede;
 
+.btn-info {
+  font-family: 'Merriweather', serif;
+}
+
 // ************ HEADER *************** //
 
 .navbar {
@@ -28,6 +32,7 @@ $border: #dedede;
   font-family: 'Merriweather', serif;
   padding: 10px 0;
   font-size: 30px;
+  background-image: url('worn_dots.jpg');
 }
 
 h2 {

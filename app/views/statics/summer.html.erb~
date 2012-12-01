@@ -1,4 +1,5 @@
 <% provide(:title, "Summer Backpacking Checklist") %>
+<% provide(:desc, "A comprehensive summer backpacking checklist for all your summer backpacking adventures") %>
 <h1 class="list-h1">Summer Backpacking Checklist</h1>
 <h2 class="ul-list-header">Sleeping</h2>
 <table class="ul-list-section">
