@@ -9,10 +9,23 @@
   <div class="social-button">
     <div class="g-plusone" data-size="medium" data-href="http://www.backpackingchecklist.net"></div>
   </div>
+  <br />
   <script type="text/javascript">
-//<![CDATA[
-document.write('<script type="text/javascript" src="http://www.avantlink.com/api.php?affiliate_id=31645&amp;module=AdSearch&amp;website_id=124521&amp;merchant_id=10248&amp;ad_type=image&amp;image_width=300&amp;search_results_count=1&amp;integration_type=standard&amp;show_ad_relevance=0&amp;output=js&amp;context_url=' + encodeURIComponent(location.href) + '">');
-document.write('</' + 'script>');
-//]]>
-</script>
+  //<![CDATA[
+  document.write('<script type="text/javascript" src="http://www.avantlink.com/api.php?affiliate_id=31645&amp;module=AdSearch&amp;website_id=124521&amp;merchant_id=10248&amp;ad_type=image&amp;image_width=300&amp;search_results_count=1&amp;search_results_options=_blank&amp;integration_type=standard&amp;show_ad_relevance=0&amp;output=js&amp;context_url=' + encodeURIComponent(location.href) + '">');
+  document.write('</' + 'script>');
+  //]]>
+  </script>
+  <script type="text/javascript">
+  //<![CDATA[
+  document.write('<script type="text/javascript" src="http://www.avantlink.com/api.php?affiliate_id=31645&amp;module=AdSearch&amp;website_id=124521&amp;merchant_id=10060&amp;ad_type=image&amp;image_width=300&amp;search_results_count=1&amp;search_results_options=_blank&amp;integration_type=standard&amp;show_ad_relevance=0&amp;output=js&amp;context_url=' + encodeURIComponent(location.href) + '">');
+  document.write('</' + 'script>');
+  //]]>
+  </script>
+  <script type="text/javascript">
+  //<![CDATA[
+  document.write('<script type="text/javascript" src="http://www.avantlink.com/api.php?affiliate_id=31645&amp;module=AdSearch&amp;website_id=124521&amp;ad_type=image&amp;image_width=300&amp;search_results_count=1&amp;search_results_options=_blank&amp;integration_type=standard&amp;show_ad_relevance=0&amp;output=js&amp;context_url=' + encodeURIComponent(location.href) + '">');
+  document.write('</' + 'script>');
+  //]]>
+  </script>
 </div>
